@@ -32,8 +32,8 @@ public class Triangle {
     }
     public double calcPerim (Triangle a){
         double p = Point.dlinaOtrezka(a.pointA, pointB)+
-                (Point.dlinaOtrezka(a.pointB, a.pointC)+
-                 Point.dlinaOtrezka(a.pointC, a.pointA));
+                Point.dlinaOtrezka(a.pointB, a.pointC)+
+                 Point.dlinaOtrezka(a.pointC, a.pointA);
         return p;
     }
 }

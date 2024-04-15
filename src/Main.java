@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        calcAverPerimTask2(task1());
+       // calcAverPerimTask2(task1());
         calcSumSquare(task3(new File(("INPUT.txt"))));
 
     }
@@ -43,8 +43,8 @@ public class Main {
             returnList.add(new Triangle(new Point(vvod.nextDouble(), vvod.nextDouble()),
                     new Point(vvod.nextDouble(), vvod.nextDouble()),
                     new Point(vvod.nextDouble(), vvod.nextDouble())));
-        vvod.close();
         }
+            vvod.close();
         return returnList;
     }
     public static void calcSumSquare (ArrayList<Triangle> list){
